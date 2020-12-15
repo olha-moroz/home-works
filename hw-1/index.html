@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Git Commands</title>
+</head>
+<body>
+    <div>
+        <div>        
+            <h1>Basic Git Commands</h1>
+            <ul>
+                <li><b>config --global user.name olha.moroz </b>- value set what name commits will be from on a local computer</li> 
+                <li><b>git config --global user.email helga.lettres@gmail.com</b>- value set what email address commits will be from on a local computer</li>
+                <li><b>git init</b>- creates a new local repository.After running git init, adding and committing files/directories is possible</li>
+                <li><b>git status</b>- show the list the files you've changed and those you still need to add or commit</li>
+                <li><b>git add</b>- adds a change in the working directory to the staging area. It tells Git that you want to include updates to a particular file in the next commit. However, git add doesn't really affect the repository in any significant way—changes are not actually recorded until you run git commit</li>
+                <li><b>git commit</b>- records the changes made to the files to a local repository</li>
+                <li><b>git log</b>- shows the chronological commit history for a repository</li>
+                <li><b>git checkout</b>- helps to start working in a different branch, use git checkout to switch branches</li>
+                <li><b>git branch</b>- command lets you create, list, rename, and delete branches. It doesn't let you switch between branches or put a forked history back together again. For this reason, git branch is tightly integrated with the git checkout and git merge commands</li>
+                <li><b>git push</b>- sends local commits to the remote repository. git push requires two parameters: the remote repository and the branch that the push is for</li>
+                <li><b>git pull </b>- shows the latest version of a repository run git pull. This pulls the changes from the remote repository to the local computer</li>
+                <li><b>git merge</b>- integrates branches together. git merge combines the changes from one branch to another branch</li>
+                <li><b>git clone</b>- to create a local working copy of an existing remote repository, use git clone to copy and download the repository to a computer. Cloning is the equivalent of git init when working with a remote repository. Git will create a directory locally with all files and repository history</li>
+            </ul>
+        </div>
+        <div>
+            <p><b>.gitignore </b>- is a text file that tells Git which files or folders to ignore in a project</p>
+        </div>
+        <div>
+            <h1>Advanced Git Commands</h1>
+            <ul>
+                <li><b>git revert</b>- is the safest way to change history with Git. Instead of deleting existing commits, git revert looks at the changes introduced in a specific commit, then applies the inverse of those changes in a new commit. It functions as an "undo commit" command, without sacrificing the integrity of your repository's history</li>
+                <li><b>git rebase</b>- integrates changes from one branch into another. It is an alternative to the better known "merge" command. Most visibly, rebase differs from merge by rewriting the commit history in order to produce a straight, linear succession of commits</li>
+                <li><b>git reset</b>- deletes information by moving the head pointer and the branch pointer to another point in time</li>
+                <li><b>git cherry-pick</b>- enables arbitrary Git commits to be picked by reference and appended to the current working HEAD. Cherry picking is the act of picking a commit from a branch and applying it to another. git cherry-pick can be useful for undoing changes</li>
+                <li><b>git stash</b>- to save changes made when they’re not in a state to commit them to a repository. This will store the work and give a clean working directory. For instance, when working on a new feature that’s not complete, but an urgent bug needs attention</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
